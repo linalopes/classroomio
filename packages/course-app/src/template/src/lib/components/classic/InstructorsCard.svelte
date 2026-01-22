@@ -14,10 +14,12 @@
 <div
   class="flex max-h-full max-w-[300px] flex-col items-start gap-3 rounded-md border p-3 md:max-h-[250px] md:max-w-[500px] md:flex-row lg:max-w-[400px] xl:max-w-[550px]"
 >
-  <div class="h-full w-full rounded-md bg-[#FFE8FF] p-2">
+  <div
+    class="h-[180px] w-full overflow-hidden rounded-md bg-[#FFE8FF] p-2 md:h-[200px] md:w-[220px]"
+  >
     <img
       src={banner ? banner : './course-banner.jpg'}
-      alt="tutor"
+      alt={name || 'tutor'}
       class="h-full w-full rounded object-cover"
     />
   </div>

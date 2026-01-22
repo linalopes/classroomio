@@ -157,7 +157,12 @@
         </h1>
         <section class="grid w-full grid-cols-1 place-items-center gap-2 md:grid-cols-2">
           {#each instructorSection.settings.list as item}
-            <InstructorCard name={item.name} description={item.description} rating={item.rating} />
+            <InstructorCard
+              name={item.name}
+              description={item.description}
+              rating={item.rating}
+              banner={item.imageUrl}
+            />
           {/each}
         </section>
         <div class="mt-6 flex w-full justify-center px-4 md:justify-end">
@@ -186,7 +191,7 @@
   {#if testimonialSection?.show}
     <section id="testimonial" class="h-full bg-white px-4 pb-20 pt-4 lg:px-14">
       <h1 class="mb-4 text-center text-3xl font-bold text-[#3F3F3F]">
-        Words from our past learners
+        What participants take away from each workshop
       </h1>
       <section class="grid w-full grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {#each testimonialSection.settings.list as item}
@@ -205,9 +210,8 @@
       </div>
       <div class="my-5 flex w-full items-center justify-center">
         <PrimaryButton
-          href={ctaSection.settings?.button?.link}
-          class="bg-classic-secondary hover:bg-classic-secondary text-classic rounded-sm border border-gray-100 text-lg font-bold hover:scale-95"
-          label={ctaSection.settings?.button?.label}
+          href={ctaSection.settings?.button?.link || '/courses'}
+          label={ctaSection.settings?.button?.label || 'View all courses'}
         />
       </div>
     </section>

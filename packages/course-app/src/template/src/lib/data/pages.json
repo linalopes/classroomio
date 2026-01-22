@@ -153,11 +153,13 @@
             {
               "rating": 5,
               "name": "Lina Lopes",
+              "imageUrl": "/lina.jpg",
               "description": "Creative technologist, artist and educator. Lina has worked with digital technologies for over 15 years, combining art, technology and social impact to create meaningful experiences."
             },
             {
               "rating": 5,
               "name": "Elon Gates",
+              "imageUrl": "./course-banner.jpg",
               "description": "Full-stack developer with expertise in React, Node.js, and modern JavaScript. Has led multiple successful client projects and loves teaching best practices."
             }
           ]
@@ -172,18 +174,23 @@
           "questions": [
             {
               "id": 1,
-              "title": "Do I need prior programming experience?",
-              "content": "While some JavaScript knowledge is helpful, our beginner courses start from the basics. We'll help you build a strong foundation before moving to advanced React concepts."
+              "title": "Do I need programming experience to join?",
+              "content": "No. Most courses are designed for curious beginners. We explain the basics step-by-step and offer optional \"deeper dives\" for participants who already have experience with code or creative technology."
             },
             {
               "id": 2,
-              "title": "How practical are the courses?",
-              "content": "Very practical! You'll build real projects that mirror our agency work, including e-commerce sites, dashboards, and social media applications using React."
+              "title": "What tools do I need to get started?",
+              "content": "At minimum, you'll need a laptop, a modern web browser and a stable internet connection. For some courses we share a short materials list in advance — usually simple things like paper, tape, cardboard, sensors or small electronics. Any extra tools required will always be listed on each course page."
             },
             {
               "id": 3,
-              "title": "What support do you provide?",
-              "content": "You'll have access to our instructor team, weekly live Q&A sessions, a private Discord community, and code reviews for your projects."
+              "title": "How long does each course take?",
+              "content": "Our courses are usually 2–4 hours long, with optional self-paced activities you can do before or after. When we run multi-session programs, they are broken into short, focused sessions so you can fit them into your week more easily."
+            },
+            {
+              "id": 4,
+              "title": "Will I get access to future updates of the courses?",
+              "content": "Yes. When you enroll in a course, you get access to updated versions of the videos, notes and resources for at least 12 months. If we significantly rework or expand a course, we'll let you know by email so you can explore what's new."
             }
           ]
         }
@@ -196,17 +203,17 @@
             {
               "name": "Michael Chang",
               "role": "Junior React Developer",
-              "description": "The React fundamentals course was exactly what I needed. The instructors broke down complex concepts into manageable pieces, and the hands-on projects helped cement my understanding."
+              "description": "A tangible prototype to show and share."
             },
             {
               "name": "Emma Wilson",
               "role": "Frontend Developer",
-              "description": "Thanks to Hype180's advanced React course, I was able to level up my skills and land a senior developer position. The real-world projects were especially valuable."
+              "description": "A repertoire of references to keep exploring."
             },
             {
               "name": "Alex Thompson",
               "role": "Software Engineer",
-              "description": "The React ecosystem can be overwhelming, but Hype180's structured approach helped me master not just React, but also the surrounding tools and best practices."
+              "description": "A small collection of prompts and exercises to revisit later."
             }
           ]
         }
@@ -226,11 +233,11 @@
       {
         "type": "cta",
         "settings": {
-          "title": "Start Your React Journey Today",
+          "title": "Start your next creative experiment today",
           "titleHighlight": "Join Hype180",
           "subtitle": "Transform your career with our industry-leading React.js courses and expert instruction.",
           "button": {
-            "label": "Browse Courses",
+            "label": "View all courses",
             "link": "/courses",
             "redirect": false
           }
