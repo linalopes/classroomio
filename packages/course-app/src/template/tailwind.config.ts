@@ -115,7 +115,9 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       fontFamily: {
-        sans: [...fontFamily.sans],
+        sans: ['Inter', ...fontFamily.sans],
+        heading: ['Space Grotesk', ...fontFamily.sans],
+        mono: ['Courier Prime', ...fontFamily.mono],
         roboto: ['Roboto', ...fontFamily.sans],
         matter: ['Matter', ...fontFamily.sans],
         slab: ['Roboto Slab', ...fontFamily.serif]

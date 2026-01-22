@@ -549,7 +549,7 @@
               class="flex items-center"
             >
               <img
-                src={org.avatar_url || '/logo-192.png'}
+                src={org.avatar_url || '/logo.svg'}
                 alt={`${org.name} logo`}
                 class="mx-auto inline-block max-h-10 w-10 rounded"
                 data-atf="1"

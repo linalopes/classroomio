@@ -3,7 +3,7 @@
   import { currentOrg } from '$lib/utils/store/org';
 
   export let studentName = '';
-  const logo = '/logo-512.png';
+  const logo = '/logo.svg';
 
   const dateIssued = new Date().toLocaleDateString();
 </script>

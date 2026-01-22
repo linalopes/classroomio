@@ -124,7 +124,7 @@
               {/each}
               {#if filteredCourses.length == 0}
                 <div class="mx-auto w-full px-4">
-                  <EmptyState headerClassName="text-[#CE02CE]" />
+                  <EmptyState headerClassName="text-[#EA7DFF]" />
                 </div>
               {/if}
             </section>

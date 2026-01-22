@@ -16,5 +16,5 @@ export const components: TemplateComponents = {
 
 export const utils = {
   fontLink:
-    'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'
+    'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&family=Inter:wght@300;600&family=Courier+Prime:wght@400;700&display=swap'
 };

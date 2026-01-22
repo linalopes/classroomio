@@ -79,11 +79,11 @@
         href={coursesPath}
         title="{$t('navigation.goto')} {isCoursePage
           ? $t('navigation.courses')
-          : $t('navigation.classroomio_home')}"
+          : 'School of Tomorrows AI'}"
         id="logo"
         class="line-clamp-1 text-lg"
       >
-        {isCoursePage ? title : 'ClassroomIO'}
+        {isCoursePage ? title : 'School of Tomorrows AI'}
       </a>
     </div>
 

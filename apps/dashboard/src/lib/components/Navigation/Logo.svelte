@@ -8,14 +8,14 @@
 <div class="logo">
   <a
     href="/"
-    title={`${$t('navigation.goto')} ${orgName || 'ClassroomIO'} ${$t('navigation.home')}`}
+    title={`${$t('navigation.goto')} ${orgName || 'School of Tomorrows AI'} ${$t('navigation.home')}`}
     class="flex items-center gap-2"
     id="logo"
     data-hveid="8"
   >
     <img
-      src={logo || '/logo-192.png'}
-      alt={`${orgName || 'ClassroomIO'} logo`}
+      src={logo || '/logo.svg'}
+      alt={`${orgName || 'School of Tomorrows AI'} logo`}
       class="mx-auto inline-block w-9 rounded"
       data-atf="1"
     />

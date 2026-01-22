@@ -170,15 +170,21 @@
     text-decoration: underline;
   }
   :global(:root) {
-    --main-primary-color: rgba(29, 78, 216, 1);
-    --border-color: #eaecef;
-    --app-background-color: #fafbfc;
-    --app-background: radial-gradient(
-      circle at 10% 20%,
-      rgb(239, 246, 249) 0%,
-      rgb(206, 239, 253) 90%
+    --main-primary-color: #22113e;
+    --border-color: #cad8d8;
+    --app-background-color: #ffffff;
+    --app-background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(245, 243, 247, 0.8) 50%,
+      rgba(255, 255, 255, 1) 100%
     );
-    --dark-app-background: radial-gradient(circle at 10% 20%, rgb(0 0 0) 0%, rgb(27 60 74) 90%);
+    --dark-app-background: linear-gradient(
+      to right,
+      rgb(18, 9, 32) 0%,
+      rgb(26, 13, 47) 50%,
+      rgb(18, 9, 32) 100%
+    );
   }
 
   :global(.app-background) {
@@ -214,7 +220,7 @@
 
   :global(.plyr__controls) {
     background:
-      url(/logo-192.png) 99% 70% no-repeat,
+      url(/logo.svg) 99% 70% no-repeat,
       linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
     background-size:
       50px auto,

@@ -387,7 +387,7 @@
           <UploadImage
             shape="rounded-md"
             bind:avatar={favicon}
-            src={$currentOrg.favicon ?? '/logo-512.png'}
+            src={$currentOrg.favicon ?? '/logo.svg'}
             widthHeight="w-16 h-16 lg:w-24 lg:h-24"
             flexDirection="flex-row"
             isDisabled={true}

@@ -38,7 +38,7 @@
   <div class="container flex h-14 max-w-screen-2xl items-center">
     <div class="mr-4 flex">
       <a href="/" class="mr-6 flex items-center">
-        <img src="/logo-512.png" alt="Course App" class="h-8 w-8" />
+        <img src="/logo.svg" alt="Course App" class="h-8 w-8" />
         {' '}
         <span class="inline-block font-bold">ourseapp</span>
       </a>{' '}

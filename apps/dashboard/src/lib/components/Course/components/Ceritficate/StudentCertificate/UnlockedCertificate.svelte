@@ -30,7 +30,7 @@
           studentName: `${$profile.fullname}`,
           courseName: `${$course.title}`,
           courseDescription: `${$course.description}`,
-          orgLogoUrl: $currentOrg.avatar_url || `${$currentOrgDomain}/logo-512.png`,
+          orgLogoUrl: $currentOrg.avatar_url || `${$currentOrgDomain}/logo.svg`,
           orgName: `${$currentOrg.name}`
         }
       });

@@ -33,11 +33,11 @@
           <div class="flex h-full w-full flex-col gap-4 pt-4">
             <p class="w-full max-w-[600px] text-4xl font-bold lg:text-5xl">
               <span>{content.settings.title}</span><br />
-              <span class=" italic text-[#CE02CE]">
+              <span class=" italic text-[#EA7DFF]">
                 {content.settings.titleHighlight}
               </span>
             </p>
-            <p class="w-full max-w-[600px] text-[#878787] xl:text-lg">
+            <p class="w-full max-w-[600px] text-[#22113E] xl:text-lg">
               {content.settings.subtitle}
             </p>
             <PrimaryButton
@@ -81,7 +81,7 @@
           <div class="min-h-fit max-w-[400px]">
             {#each aboutSection.settings.benefits.list as item, index}
               <div
-                class="benefit-card mb-9 w-full max-w-[200px] rounded-b-lg border-b-4 border-[#CE02CE] bg-white p-4 text-center font-semibold shadow-lg"
+                class="benefit-card mb-9 w-full max-w-[200px] rounded-b-lg border-b-4 border-[#EA7DFF] bg-white p-4 text-center font-semibold shadow-lg"
                 class:left={index % 2 === 0}
                 class:right={index % 2 !== 0}
               >
@@ -125,7 +125,7 @@
           {#if $courses.length > 3}
             <div class="my-5 flex w-full items-center justify-center">
               <PrimaryButton
-                class="bg-[#CE02CE] text-lg font-semibold text-white"
+                class="bg-[#EA7DFF] text-lg font-semibold text-white"
                 onClick={() => (viewAll = !viewAll)}
                 label="View more programs"
               />
@@ -133,7 +133,7 @@
           {/if}
         {:else}
           <div class="mx-auto w-full px-4 lg:w-[70%]">
-            <EmptyState headerClassName="text-[#CE02CE]" />
+            <EmptyState headerClassName="text-[#EA7DFF]" />
           </div>
         {/if}
       </div>

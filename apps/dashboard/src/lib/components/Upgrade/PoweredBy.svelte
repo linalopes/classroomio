@@ -20,7 +20,7 @@
             opacity-0 translate-y-full -translate-x-full transition duration-500 text-white"
         size={16}
       />
-      <img src="/logo-192.png" alt="logo" class="group-hover:opacity-0 opacity-100 h-[24px]" />
+      <img src="/logo.svg" alt="logo" class="group-hover:opacity-0 opacity-100 h-[24px]" />
       {$t('course.navItem.landing_page.powered_by')} ClassroomIO
     </span>
   </a>

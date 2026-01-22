@@ -6,7 +6,7 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       title: (
         <div className="flex items-center gap-2">
-          <img src="/logo-192.png" className="size-8" alt="ClassroomIO logo" />
+          <img src="/logo.svg" className="size-8" alt="ClassroomIO logo" />
           <span className="font-medium">ClassroomIO</span>
         </div>
       )

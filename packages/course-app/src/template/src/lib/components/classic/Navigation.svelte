@@ -30,9 +30,9 @@
   </button>
 
   <!-- Desktop Navigation Menu (Hidden on mobile) -->
-  <ul class="hidden list-none items-center space-x-8 text-base font-bold text-[#1F2937] lg:flex">
+  <ul class="hidden list-none items-center space-x-8 text-base font-bold text-[#22113E] lg:flex">
     {#each content?.settings.navItems as navItem}
-      <li class="hover:text-[#CE02CE]">
+      <li class="hover:text-[#EA7DFF]">
         <a
           href={navItem.link}
           target={navItem.redirect ? '_blank' : undefined}
@@ -51,7 +51,7 @@
   <ul
     class={`fixed left-0 top-0 h-full w-full transform bg-white pt-10 hover:no-underline ${
       open ? 'translate-y-0' : '-translate-y-full'
-    } cursor-pointer list-none text-base font-bold text-[#1F2937] transition-transform duration-300 ease-in-out lg:hidden`}
+    } cursor-pointer list-none text-base font-bold text-[#22113E] transition-transform duration-300 ease-in-out lg:hidden`}
   >
     <button onclick={toggleMenu} class="absolute right-4 top-4 z-20 lg:hidden">
       <Close size={24} />
@@ -68,16 +68,16 @@
       </li>
     {/each}
     <a href="/courses" class="flex items-center gap-1 border-b px-6 py-4" onclick={toggleMenu}>
-      <p class="text-base font-bold text-[#1F2937]">Start Learning</p>
-      <ArrowRight size={16} class="fill-[#1F2937] font-bold" />
+      <p class="text-base font-bold text-[#22113E]">Start Learning</p>
+      <ArrowRight size={16} class="fill-[#22113E] font-bold" />
     </a>
   </ul>
 
   <!-- Learn with Me Button (Visible on desktop when logged in) -->
 
   <a href="/courses" class="hidden items-center gap-1 lg:flex">
-    <p class="text-base font-bold text-[#1F2937]">Start Learning</p>
-    <ArrowRight size={16} class="fill-[#1F2937] font-bold" />
+    <p class="text-base font-bold text-[#22113E]">Start Learning</p>
+    <ArrowRight size={16} class="fill-[#22113E] font-bold" />
   </a>
 </nav>
 

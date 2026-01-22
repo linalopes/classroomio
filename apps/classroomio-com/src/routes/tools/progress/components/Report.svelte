@@ -129,7 +129,7 @@
       style="display: flex;"
       class="border mt-20 bottom-5 w-[50%] mx-auto flex gap-1 items-center justify-center bg-white rounded-md px-2 py-1"
     >
-      <img src="/logo-192.png" alt="classroomio logo" class="w-4" />
+      <img src="/logo.svg" alt="classroomio logo" class="w-4" />
       <p class="text-[10px] font-bold">ClassroomIO.com</p>
     </div>
     <!--  -->

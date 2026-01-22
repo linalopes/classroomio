@@ -43,8 +43,11 @@
     --minimal-primary: 222 95% 41%;
     --minimal-secondary: 214 33% 9%;
 
-    --classic-primary: 300 98% 41%;
-    --classic-secondary: 300 100% 95%;
+    --classic-primary: 263 47% 15%;
+    --classic-secondary: 180 20% 80%;
+    --classic-accent1: 295 100% 75%;
+    --classic-accent2: 175 95% 50%;
+    --classic-background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(245, 243, 247, 0.8) 50%, rgba(255, 255, 255, 1) 100%);
 
     --examprep-primary: 224 98% 37%;
 
@@ -91,11 +94,36 @@
   }
   body {
     @apply bg-background text-foreground font-app;
+    font-weight: 300;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(245, 243, 247, 0.8) 50%, rgba(255, 255, 255, 1) 100%);
+  }
+
+  .dark body {
+    background: linear-gradient(to right, rgb(18, 9, 32) 0%, rgb(26, 13, 47) 50%, rgb(18, 9, 32) 100%);
+  }
+
+  /* Brand Typography */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif !important;
+    font-weight: 300 !important;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'Courier Prime', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  }
+
+  code {
+    font-weight: 400;
+  }
+
+  strong, b, .font-semibold {
+    font-weight: 600;
   }
 }
 
 .prose :is(h1, h2, h3, h4, h5, h6) {
-  font-weight: 700;
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif !important;
+  font-weight: 300 !important;
   margin-top: 20px;
 }
 .prose :is(h1) {
