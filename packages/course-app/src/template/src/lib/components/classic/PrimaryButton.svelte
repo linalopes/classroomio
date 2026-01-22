@@ -13,11 +13,11 @@
 
 {#if href}
   <a
-    {href}
+  {href}
     class={cn('classic-primary-btn', className)}
-    onclick={onClick}
-    {...restProps}
-  >
+  onclick={onClick}
+  {...restProps}
+>
     {#if label}
       {label}
     {:else}
@@ -32,9 +32,9 @@
     {...restProps}
   >
     {#if label}
-      {label}
+  {label}
     {:else}
-      {@render children?.()}
-    {/if}
+    {@render children?.()}
+  {/if}
   </button>
 {/if}

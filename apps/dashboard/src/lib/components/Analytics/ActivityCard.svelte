@@ -13,7 +13,8 @@
 <div
   class="flex flex-col items-center justify-center gap-5 rounded-xl border p-3 dark:border-neutral-600 md:flex-row md:p-5"
 >
-  <div class="bg-primary-200 w-fit rounded-full p-4 text-black">
+  <!-- School of Tomorrow's AI brand pink icon background -->
+  <div class="bg-[#ea7dff] w-fit rounded-full p-4 text-white">
     <svelte:component this={activity.icon} size={24} />
   </div>
 

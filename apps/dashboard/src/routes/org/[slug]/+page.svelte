@@ -96,7 +96,7 @@
 
 <div class="w-full max-w-5xl px-5 py-10 md:mx-auto">
   <div class="mb-5 flex items-center justify-between">
-    <h1 class="mb-3 text-2xl font-bold dark:text-white md:text-3xl">
+    <h1 class="mb-3 text-2xl font-bold md:text-3xl dark:text-white">
       {$t(getGreeting())}
       {$profile.fullname}!
     </h1>
@@ -137,7 +137,7 @@
 
   <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
     <div
-      class="flex min-h-[45vh] w-full flex-col rounded-md border p-3 dark:border-neutral-600 md:p-5"
+      class="flex min-h-[45vh] w-full flex-col rounded-md border p-3 md:p-5 dark:border-neutral-600"
     >
       <h3 class="mt-0 text-2xl font-bold">
         {$t('dashboard.top_courses')}
@@ -152,7 +152,7 @@
           {#each dashAnalytics.topCourses as course}
             <div class="flex items-center gap-2">
               <div class="w-4/6 space-y-1">
-                <Link href={`/courses/${course.id}`}>
+                <Link href={`/courses/${course.id}`} class="dashboard-link">
                   <p class="line-clamp-2 pb-[0.1rem] text-sm font-medium leading-none">
                     {course.title}
                   </p>
@@ -195,7 +195,7 @@
     </div>
 
     <div
-      class="flex min-h-[45vh] w-full flex-col rounded-md border p-3 dark:border-neutral-600 md:p-5"
+      class="flex min-h-[45vh] w-full flex-col rounded-md border p-3 md:p-5 dark:border-neutral-600"
     >
       <h3 class="mt-0 text-2xl font-bold">
         {$t('dashboard.recent_enrollments')}
@@ -228,7 +228,7 @@
               </div>
 
               <div class="w-2/4">
-                <Link href={`/courses/${enrollment.courseId}`}>
+                <Link href={`/courses/${enrollment.courseId}`} class="dashboard-link">
                   <p class="line-clamp-2 pb-[0.1rem] text-sm font-medium leading-none">
                     {enrollment.course}
                   </p>

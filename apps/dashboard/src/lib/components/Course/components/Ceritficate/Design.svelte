@@ -17,6 +17,7 @@
   import BlueProfessionalBadge from './templates/BlueProfessionalBadge.svelte';
   import PurpleBadgePattern from './templates/PurpleBadgePattern.svelte';
   import BlueBadgePattern from './templates/BlueBadgePattern.svelte';
+  import SchoolOfTomorrowsAI from './templates/SchoolOfTomorrowsAI.svelte';
   import { snackbar } from '$lib/components/Snackbar/store';
   import { saveCertificateValidation } from '$lib/utils/functions/validator';
 
@@ -27,8 +28,35 @@
     'purpleProfessionalBadge',
     'blueProfessionalBadge',
     'purpleBadgePattern',
-    'blueBadgePattern'
+    'blueBadgePattern',
+    'school_ai'
   ];
+
+  // Map theme IDs to image URLs and labels
+  const themeConfig = {
+    professional: { image: '/images/certificate_theme_professional.png', label: 'Professional' },
+    plain: { image: '/images/certificate_theme_plain.png', label: 'Plain' },
+    purpleProfessionalBadge: {
+      image: '/images/certificate_theme_purpleProfessionalBadge.png',
+      label: 'Purple Professional Badge'
+    },
+    blueProfessionalBadge: {
+      image: '/images/certificate_theme_blueProfessionalBadge.png',
+      label: 'Blue Professional Badge'
+    },
+    purpleBadgePattern: {
+      image: '/images/certificate_theme_purpleBadgePattern.png',
+      label: 'Purple Badge Pattern'
+    },
+    blueBadgePattern: {
+      image: '/images/certificate_theme_blueBadgePattern.png',
+      label: 'Blue Badge Pattern'
+    },
+    school_ai: {
+      image: '/images/certificate_theme_professional.png',
+      label: "School of Tomorrow's AI"
+    }
+  };
 
   let isSaving = false;
   let errors = {
@@ -40,7 +68,7 @@
     isSaving = true;
 
     try {
-      // Prevent free plan users from bypassing UI restrictions  
+      // Prevent free plan users from bypassing UI restrictions
       if ($isFreePlan) {
         errors.description = 'Certificate customization is only available on paid plans';
         throw new Error(errors.description);
@@ -112,8 +140,8 @@
             <div class="mr-3 flex">
               <RadioButton value={theme} />
               <img
-                src={`/images/certificate_theme_${theme}.png`}
-                alt="themes"
+                src={themeConfig[theme]?.image || `/images/certificate_theme_${theme}.png`}
+                alt={themeConfig[theme]?.label || theme}
                 class="h-[82px] w-[110px]"
               />
             </div>
@@ -181,6 +209,8 @@
           <PurpleBadgePattern studentName={studentNamePlaceholder} />
         {:else if $course.certificate_theme === 'blueBadgePattern'}
           <BlueBadgePattern studentName={studentNamePlaceholder} />
+        {:else if $course.certificate_theme === 'school_ai'}
+          <SchoolOfTomorrowsAI studentName={studentNamePlaceholder} />
         {/if}
       </div>
     </section>

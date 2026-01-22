@@ -82,16 +82,16 @@
 
     <!-- Right: Built on ClassroomIO -->
     <div class="flex flex-1 justify-end">
-      <a
-        href="https://classroomio.com"
-        target="_blank"
-        rel="noopener noreferrer"
+    <a
+      href="https://classroomio.com"
+      target="_blank"
+      rel="noopener noreferrer"
         class="footer-built-on flex items-center gap-1"
-      >
+    >
         <p class="footer-built-on-text text-base font-semibold text-[#22113E] underline">
           Built on ClassroomIO
         </p>
-      </a>
+    </a>
     </div>
   </nav>
 {/if}

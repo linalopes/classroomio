@@ -40,8 +40,9 @@
       : $currentOrgPath;
 </script>
 
+<!-- School of Tomorrow's AI dashboard header brand color -->
 <nav
-  class="{navClass} bg-primary-700 flex h-[48px] w-full p-1 transition delay-150 duration-300 ease-in-out md:px-6"
+  class="{navClass} bg-[#ea7dff] flex h-[48px] w-full p-1 transition delay-150 duration-300 ease-in-out md:px-6"
 >
   <ul class="flex w-full items-center">
     <div class="flex items-center text-white">

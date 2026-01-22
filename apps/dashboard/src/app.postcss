@@ -738,3 +738,53 @@ code {
   --cds-tag-background-cool-gray: #CAD8D8; /* Gray Green */
   --cds-tag-color-cool-gray: #22113E;      /* Deep Purple */
 }
+
+/* === School of Tomorrow's AI – Dashboard Course Links === */
+/* Override Carbon blue links in Top Courses and Recent Enrollments */
+.dashboard-link.bx--link {
+  color: #22113E; /* deep purple */
+  text-decoration: underline;
+}
+
+.dashboard-link.bx--link:hover,
+.dashboard-link.bx--link:focus-visible {
+  color: #EA7DFF; /* pink on hover */
+  text-decoration: underline;
+}
+
+/* === School of Tomorrow's AI – Dashboard Brand Tokens === */
+/* Override Carbon design tokens at :root level for the entire dashboard */
+:global(:root) {
+  /* Primary link color (deep purple instead of blue) */
+  --cds-link-01: #22113E;
+
+  /* Hover and focus color (brand pink) */
+  --cds-link-hover: #ea7dff;
+
+  /* Visited can stay deep purple as well */
+  --cds-link-visited: #22113E;
+
+  /* Optional: secondary link token if used anywhere */
+  --cds-link-02: #22113E;
+}
+
+/* Ensure hover states use the brand pink color */
+/* Carbon may not use --cds-link-hover directly, so we add a fallback rule */
+:global(.bx--link:hover),
+:global(.bx--link:focus-visible) {
+  color: var(--cds-link-hover, #ea7dff) !important;
+}
+
+/* === Audience page – table link colors === */
+.audience-page .bx--data-table .bx--link,
+.audience-page .bx--data-table .bx--link:visited {
+  color: #22113E !important; /* deep purple */
+  text-decoration: underline !important;
+}
+
+.audience-page .bx--data-table .bx--link:hover,
+.audience-page .bx--data-table .bx--link:focus-visible,
+.audience-page .bx--data-table tr:hover .bx--link {
+  color: #EA7DFF !important; /* brand pink */
+  text-decoration: underline !important;
+}
