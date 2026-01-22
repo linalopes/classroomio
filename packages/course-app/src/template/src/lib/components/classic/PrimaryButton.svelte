@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { Button } from '$lib/components/ui/button';
   import { cn } from '$lib/utils';
 
   interface Props {
@@ -12,17 +11,30 @@
   const { onClick, children, label, href, class: className, ...restProps }: Props = $props();
 </script>
 
-<Button
-  {href}
-  class={cn(
-    'bg-classic rounded text-white font-semibold p-2 hover:bg-classic/90 hover:scale-95 transition-all duration-300',
-    className
-  )}
-  onclick={onClick}
-  {...restProps}
->
-  {label}
-  {#if children}
-    {@render children?.()}
-  {/if}
-</Button>
+{#if href}
+  <a
+    {href}
+    class={cn('classic-primary-btn', className)}
+    onclick={onClick}
+    {...restProps}
+  >
+    {#if label}
+      {label}
+    {:else}
+      {@render children?.()}
+    {/if}
+  </a>
+{:else}
+  <button
+    class={cn('classic-primary-btn', className)}
+    onclick={onClick}
+    type="button"
+    {...restProps}
+  >
+    {#if label}
+      {label}
+    {:else}
+      {@render children?.()}
+    {/if}
+  </button>
+{/if}

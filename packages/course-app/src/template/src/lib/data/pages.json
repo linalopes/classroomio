@@ -9,7 +9,7 @@
         "type": "seo",
         "show": true,
         "settings": {
-          "title": "Hype180 Academy",
+          "title": "School of Tomorrows AI",
           "description": "Learn React.js from industry experts at Hype180",
           "url": "https://courseapp.oncws.com",
           "appUrl": "https://courseapp.oncws.com",
@@ -81,11 +81,11 @@
         "type": "header",
         "show": true,
         "settings": {
-          "title": "Master React.js Development",
-          "titleHighlight": "Learn from Industry Experts at Hype180",
-          "subtitle": "Join our comprehensive React.js training program and learn how to build modern web applications from experienced developers who work on real-world projects daily.",
+          "title": "Augmented Cinema – Video Mapping + AI",
+          "titleHighlight": "",
+          "subtitle": "Design cinematic experiences that spill out of the screen and onto real space. Combine video mapping, physical environments, and AI-generated visuals in a playful, guided sprint.",
           "action": {
-            "label": "Start Learning",
+            "label": "Join the next cohort",
             "link": "/courses",
             "redirect": false
           },
@@ -101,25 +101,26 @@
         "type": "about",
         "show": true,
         "settings": {
-          "title": "Transform Your Career with React.js Expertise",
+          "title": "Why learning here feels different",
           "subtitle": "Our courses are designed by professional developers to help you master React.js and modern web development practices.",
+          "content": "At School of Tomorrow's AI you don't just follow tutorials — you rehearse futures. We treat AI as a co-pilot for radical imagination. Each course blends body, space, sensors and code so you can prototype with your hands, your tools and your curiosity.",
           "benefits": {
             "title": "Why Choose Hype180",
             "list": [
               {
-                "title": "Industry-Relevant Projects",
+                "title": "Hands-on with physical and digital prototypes",
                 "subtitle": "Work on real-world React applications that mirror actual client projects we've delivered at Hype180."
               },
               {
-                "title": "Active Developers as Instructors",
+                "title": "AI as a co-pilot of imagination",
                 "subtitle": "Learn from developers who are actively building and shipping React applications in production environments."
               },
               {
-                "title": "Modern Tech Stack",
+                "title": "Projects that start simple and grow with you",
                 "subtitle": "Master the latest React features, tools, and best practices used in professional development environments."
               },
               {
-                "title": "Career Support",
+                "title": "A safe space to experiment, fail and try...",
                 "subtitle": "Get guidance on building your portfolio, preparing for interviews, and landing your first React developer role."
               }
             ]
@@ -130,9 +131,9 @@
         "type": "courses",
         "show": true,
         "settings": {
-          "title": "Featured React.js Courses",
+          "title": "Room for Interaction",
           "titleHighlight": "",
-          "subtitle": "From fundamentals to advanced concepts, our courses cover everything you need to become a professional React developer"
+          "subtitle": "A series where you choreograph movement, light, sensors and AI in playful, guided experiments."
         }
       },
       {
@@ -151,23 +152,13 @@
           "list": [
             {
               "rating": 5,
-              "name": "Sarah Chen",
-              "description": "Senior React Developer at Hype180 with 8 years of experience building enterprise-level applications. Specializes in React performance optimization and state management."
+              "name": "Lina Lopes",
+              "description": "Creative technologist, artist and educator. Lina has worked with digital technologies for over 15 years, combining art, technology and social impact to create meaningful experiences."
             },
             {
               "rating": 5,
-              "name": "Marcus Rodriguez",
+              "name": "Elon Gates",
               "description": "Full-stack developer with expertise in React, Node.js, and modern JavaScript. Has led multiple successful client projects and loves teaching best practices."
-            },
-            {
-              "rating": 5,
-              "name": "Jessica Park",
-              "description": "Frontend architect specializing in React and TypeScript. Passionate about clean code and component-driven development methodologies."
-            },
-            {
-              "rating": 5,
-              "name": "David Kumar",
-              "description": "React Native expert and web performance specialist. Brings real-world experience from building and scaling React applications at startups and large enterprises."
             }
           ]
         }
@@ -176,7 +167,7 @@
         "type": "faq",
         "show": true,
         "settings": {
-          "title": "Common Questions About Our React Courses",
+          "title": "Common Questions About Our School Courses",
           "subtitle": "Get answers to frequently asked questions about our React.js training program",
           "questions": [
             {

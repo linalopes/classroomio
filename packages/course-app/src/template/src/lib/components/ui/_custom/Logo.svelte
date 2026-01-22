@@ -5,11 +5,11 @@
 </script>
 
 <a href="/#" class="flex flex-row items-center gap-1">
-  <figure class={cn('w-20', className)}>
+  <!-- <figure class={cn('w-20', className)}>
     <img {src} {alt} class="mx-auto inline-block rounded text-white" />
-  </figure>
+  </figure> -->
 
   {#if addAcademy}
-    <span class="text-lg font-semibold italic">Academy</span>
+    <span class="text-lg font-semibold italic">School of Tomorrow's AI</span>
   {/if}
 </a>

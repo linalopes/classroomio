@@ -3,7 +3,7 @@
   import { homePage } from '@/utils/stores/pages';
   import PrimaryButton from '../PrimaryButton.svelte';
   import { goto } from '$app/navigation';
-  import banner from '../assets/org-banner.png';
+  import patternImage from '../assets/LiloAcademy_Pattern_1.png';
   import { courses } from '@/utils/stores/course';
   import CourseCard from '../CourseCard.svelte';
   import EmptyState from '../EmptyState.svelte';
@@ -24,44 +24,53 @@
 </script>
 
 <main>
-  <!-- <Hero /> -->
-  {#if $homePage}
-    {@const content = getPageSection($homePage, SECTION.HERO)}
-    {#if content?.show}
-      <section class="flex h-full items-start justify-center px-6 pb-20 md:px-14">
-        <section class="flex flex-col-reverse items-center gap-10 md:flex-row md:justify-between">
-          <div class="flex h-full w-full flex-col gap-4 pt-4">
-            <p class="w-full max-w-[600px] text-4xl font-bold lg:text-5xl">
-              <span>{content.settings.title}</span><br />
-              <span class=" italic text-[#EA7DFF]">
-                {content.settings.titleHighlight}
-              </span>
-            </p>
-            <p class="w-full max-w-[600px] text-[#22113E] xl:text-lg">
-              {content.settings.subtitle}
-            </p>
-            <PrimaryButton
-              href={content.settings.action.link}
-              label={content.settings.action.label}
-              class="w-fit"
-            />
-          </div>
+  <!-- School of Tomorrow's AI 2026 Hero -->
+  <section
+    id="hero"
+    class="hero-section relative bg-white"
+    style="background-image: url('{patternImage}');"
+  >
+    <div class="hero-overlay"></div>
+    <div
+      class="hero-content relative z-10 mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+    >
+      <!-- Eyebrow / Label -->
+      <p class="mb-6 font-mono text-sm uppercase tracking-wide text-[#22113E]">
+        ART AND CREATIVE TECHNOLOGY SCHOOL · 2026 PROGRAM
+      </p>
 
-          <div
-            class="flex max-h-full w-full md:w-1/2 md:max-w-[800px] lg:w-4/5 xl:h-[500px] xl:w-[800px]"
-          >
-            <img
-              alt="landing page banner"
-              src={content.settings.banner.image || banner}
-              class="mt-2 h-full min-h-[200px] w-full min-w-[280px] object-cover md:mt-0"
-            />
-          </div>
-        </section>
-      </section>
+      <!-- Main Heading -->
+      <h1
+        class="font-heading mb-6 text-4xl font-light leading-tight text-[#22113E] sm:text-5xl lg:text-6xl"
+      >
+        Room for Interaction
+      </h1>
 
-      <hr class="border-classic-border mb-10 mt-5" />
-    {/if}
-  {/if}
+      <!-- Supporting Line -->
+      <p class="font-heading mb-8 text-xl font-light text-[#22113E] sm:text-2xl lg:text-3xl">
+        A playground for body, space and technology.
+      </p>
+
+      <!-- Body Copy -->
+      <p
+        class="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-[#22113E] sm:text-lg lg:text-xl"
+      >
+        School of Tomorrow's AI is a creative art & technology school. In 2026 we are running a
+        program of seven hands-on workshops under the umbrella <em class="font-semibold"
+          >Room for Interaction</em
+        > — a series where you choreograph movement, light, sensors and AI in playful, guided experiments.
+        An initiative of the School of Tomorrows AI in collaboration with Glitch Lab.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <PrimaryButton href="/courses" label="Browse courses" />
+        <a href="/courses" class="hero-secondary-btn"> View Augmented Cinema </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="border-classic-border mb-10 mt-5" />
 
   <!-- about -->
 
@@ -78,16 +87,16 @@
           </p>
         </div>
         {#if aboutSection.settings.benefits}
-          <div class="min-h-fit max-w-[400px]">
-            {#each aboutSection.settings.benefits.list as item, index}
-              <div
-                class="benefit-card mb-9 w-full max-w-[200px] rounded-b-lg border-b-4 border-[#EA7DFF] bg-white p-4 text-center font-semibold shadow-lg"
-                class:left={index % 2 === 0}
-                class:right={index % 2 !== 0}
-              >
-                {item.title}
-              </div>
-            {/each}
+          <div class="min-h-fit w-full max-w-[520px]">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+              {#each aboutSection.settings.benefits.list as item}
+                <div
+                  class="benefit-card rounded-b-lg border-b-4 border-[#EA7DFF] bg-white px-5 py-4 text-center font-semibold shadow-lg"
+                >
+                  {item.title}
+                </div>
+              {/each}
+            </div>
           </div>
         {:else}
           <img
@@ -220,19 +229,5 @@
   .benefit-card {
     transition: transform 0.3s ease-in-out;
     position: relative;
-  }
-  .benefit-card.left {
-    float: left;
-    margin-left: 6%;
-    z-index: 2;
-  }
-  .benefit-card.right {
-    float: right;
-    margin-right: 6%;
-    z-index: 1;
-  }
-  /* Make sure the cards overlap slightly */
-  .benefit-card:not(:first-child) {
-    margin-top: -40px; /* Adjust this for more overlap */
   }
 </style>

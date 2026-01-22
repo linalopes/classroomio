@@ -59,7 +59,9 @@ const config: Config = {
         },
         classic: {
           DEFAULT: 'hsl(var(--classic-primary) / <alpha-value>)',
-          secondary: 'hsl(var(--classic-secondary) / <alpha-value>)'
+          secondary: 'hsl(var(--classic-secondary) / <alpha-value>)',
+          accent1: 'hsl(var(--classic-accent1) / <alpha-value>)',
+          accent2: 'hsl(var(--classic-accent2) / <alpha-value>)'
         },
         examprep: {
           DEFAULT: 'hsl(var(--examprep-primary) / <alpha-value>)',
